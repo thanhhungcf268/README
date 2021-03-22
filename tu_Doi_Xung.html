@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    function kiem_Tra_Tu_Doi_Xung() {
+        var count = 0;
+        var tu = prompt("Nhập từ cần kiểm tra");
+        for (let i=0;i<tu.length;i++){
+            for (let j =tu.length-1;j>=0;j--){
+                if (tu[i]===tu[tu.length-1]){
+                    count++;
+                    if (count === tu.length/2){
+                        alert("Từ đối xứng")
+                    }
+                }else {
+                    alert("Từ không đối xứng")
+                }
+            }
+        }
+    }
+    kiem_Tra_Tu_Doi_Xung();
+</script>
